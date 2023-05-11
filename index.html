@@ -2,136 +2,141 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>jasperrutte.nl</title>
+    <title>Jasper Rutte</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/f9344aa975.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" >
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jasper Rutte">
+    <meta property="og:url" content="https://jasperrutte.dev">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Just a Software Development student in the Netherlands">
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="bg-zinc-900 mx-[16rem]">
-    <header>
+<body class="bg-zinc-900">
+    <header class="md:mx-[12rem]">
         <section>
-            <div class="my-[15rem] columns-2 ">
-                <h1 class="mt-[5rem] lg:text-7xl text-white pb-2 tracking-wide md:text6xl">Jasper Rutte</h1>
-                <h2 class="text-2xl text-gray-600">Software Developer</h2>
+            <div class="my-[14rem] md:columns-2 sm:columns-1">
+                <h1 class="text-white md:text-7xl mt-[10rem] sm:text-5xl">Jasper Rutte</h1>
+                <h2 class="text-gray-600 md:text-5xl sm:4xl">Software Developer</h2>
                 <div class="mt-4 flex space-x-4">
-                    <a href="https://google.nl" style="cursor:default">
-                        <i class="fa-brands fa-github fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>
+                    <a href="https://github.com/jasperrutte" rel="noopener noreferrer" target="_blank" style="cursor:default">
+                        <i class="fa-brands fa-github fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400 "></i>
                     </a>
-                    <a href="https://google.nl" style="cursor:default">
+                    <a href="#about" style="cursor:default">
                         <i class="fa-solid fa-circle-info fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>
                     </a>
-                    <a href="https://google.nl" style="cursor:default">
-                        <i class="fa-solid fa-code fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>
+                    <a href="#experience" style="cursor:default">
+                        <i class="fa-solid fa-sharp fa-code fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>
                     </a>
                 </div>
-
                 <hr class="h-1 w-[9rem] my-6 bg-gray-700 border-0">
-                <img src="./assets/images/mockup.png" alt="Jasper Rutte Mockup">
+                <img src="./assets/images/mockupX1.6.png" alt="Jasper Rutte Mockup" class="md:float-right sm:object-center" >
             </div>
         </section>
+        <hr class="h-1 bg-gray-700 border-0 mb-[5rem]">
     </header>
-    <hr class="h-1 w-[auto] bg-gray-700 border-0">
-    <main>
+
+    <main class="md:mx-[12rem]">
         <section>
-            <div class="mt-[2rem] columns-2">
-                <h1 class="text-4xl text-white font-bold pb-4">Who am I?</h1>
-                <a class="text-gray-200">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan mattis consectetur. Aliquam non turpis est. Mauris condimentum sodales nisi commodo porttitor. Suspendisse metus dui, fermentum laoreet tellus sit amet, porta placerat ipsum. Duis condimentum, justo nec feugiat venenatis, ante ex tempus nisl, sed aliquam felis sapien scelerisque est. Aliquam vel congue diam, quis tempor arcu. Nulla feugiat bibendum mi, nec vehicula mauris cursus sit amet. Aliquam erat volutpat. Aenean sagittis massa justo, quis bibendum dui tincidunt a. Mauris convallis nec arcu non fermentum. Donec porta et leo sed accumsan. Phasellus sodales magna felis, vitae fermentum sapien vehicula vel. Etiam at justo placerat, vehicula diam condimentum, congue mauris. Sed auctor risus nisl, at vestibulum diam faucibus quis.
+            <h2 class="text-white tracking-wide mb-[3rem] md:text-5xl sm:text-4xl">Who am I?</h2>
+            <div class="grid grid-cols-3 gap-4" id="about">
+
+                <p class="col-span-2 text-white text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                    Aenean at ultricies lorem. Sed egestas ligula tortor, sit amet mattis ex feugiat non.A enean at ultricies lorem. Sed egestas ligula tortor, sit amet mattis ex feugiat non. assa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fri
                     <br><br>
-                    Sed mollis egestas ipsum, molestie accumsan sapien fermentum rutrum. Phasellus eget leo consequat, venenatis sapien id, rhoncus elit. Maecenas convallis mattis arcu. Cras mattis, libero eget aliquam faucibus, justo sem imperdiet nisi, quis fringilla lacus enim eu tortor. Donec condimentum tempor turpis, non elementum lectus ultricies quis. Pellentesque mollis a ligula at accumsan. Integer in varius magna. Mauris ut nulla convallis, iaculis ligula non, vestibulum lorem. Nunc ac leo ex. Etiam ullamcorper suscipit leo. Curabitur rhoncus hendrerit viverra. Curabitur tristique dapibus nibh at ultricies. Nullam felis sapien, tempor et commodo sit amet, lacinia id ipsum. Integer sed scelerisque urna, in tempus augue. In turpis mauris, tristique a dui non, fermentum commodo purus. Proin mi tellus, dapibus sit amet pulvinar vel, luctus sit amet nunc.
-                </a>
-                <img src="./assets/images/JasperPic.png" alt="Picture" class="h-[36rem]">
+                    Duis purus diam, dictum et ante at, commodo iaculis urna. Aenean lacinia, nisl id vehicula condimentum, enim massa.Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</p>
+                <img src="./assets/images/JasperPic.png" alt="A picture of myself" class="col-span-1 content-center md:h-[28rem] rounded-full text-base md:h-[13rem]" >
             </div>
         </section>
-        <hr class="h-1 w-[auto] my-10 bg-gray-700 border-0">
+        <hr class="h-1 bg-gray-700 border-0 mb-[5rem] my-[5rem]">
         <section>
-            <h1 class="text-4xl text-white pb-4 font-bold tracking-wide">Programming <br> experiences</h1>
-            <a class="text-white">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.
-                <br><br>
-                Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus, euismod justo. Mauris nec leo non libero sodales lobortis. Quisque a neque pretium, dictum tellus vitae, euismod neque. Nulla facilisi. Phasellus ultricies dignissim nibh ut cursus. Nam et quam sit amet turpis finibus maximus tempor eget augue. Aenean at ultricies lorem. Sed egestas ligula tortor, sit amet mattis ex feugiat non. Duis purus diam, dictum et ante at, commodo iaculis urna. Aenean lacinia, nisl id vehicula condimentum, enim massa.</a>
+            <h2 class="text-white tracking-wide mb-[3rem] md:text-5xl sm:text-4xl">Programming <br>experiences</h2>
+            <div class="grid grid-cols-3 gap-4" id="experience">
+                <p class="col-span-2 text-white text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus, euismod justo. Mauris nec leo non libero sodales lobortis. Quisque a neque pretium, dictum tellus vitae, euismod neque.
+                    <br>
+                    Nulla facilisi. Phasellus ultricies dignissim nibh ut cursus. Nam et quam sit amet turpis finibus maximus tempor eget augue. Aenean at ultricies lorem. Sed egestas ligula tortor, sit amet mattis ex feugiat non. Duis purus diam, dictum et ante at, commodo iaculis urna. Aenean lacinia, nisl id vehicula condimentum, enim massa.
+                </p>
+                <img src="./assets/images/mockup2x1.6.png" alt="mockup" class="col-span-1">
+            </div>
         </section>
+
     </main>
 
-    <!--Footer container-->
-    <footer class="mt-10 bg-neutral-100 text-center dark:bg-neutral-600 lg:text-left">
-        <div class="container p-6 text-neutral-800 dark:text-neutral-200">
-            <div class="grid gap-4 lg:grid-cols-2">
-                <div class="mb-6 md:mb-0">
-                    <h5 class="mb-2 font-medium uppercase">Footer text</h5>
-
-                    <p class="mb-4">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                        atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                        corporis vitae repudiandae aliquam voluptatem veniam, est atque
-                        cumque eum delectus sint!
-                    </p>
-                </div>
-
-                <div class="mb-6 md:mb-0">
-                    <h5 class="mb-2 font-medium uppercase">Footer text</h5>
-
-                    <p class="mb-4">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                        atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                        corporis vitae repudiandae aliquam voluptatem veniam, est atque
-                        cumque eum delectus sint!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!--Copyright section-->
-        <div
-                class="bg-neutral-200 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
-            © 2023 Copyright:
-            <a
-                    class="text-neutral-800 dark:text-neutral-400"
-                    href="https://tailwind-elements.com/"
-            >Tailwind Elements</a
-            >
+    <footer class="mt-[15rem] text-center lg:text-left bg-zinc-800">
+        <div class="p-4 text-center text-gray-100">
+            © <script>document.write(new Date().getFullYear())</script> Copyright:
+            <a class="text-gray-200 transition ease-in-out delay-150 hover:text-blue-400" style="cursor:default" href="https://jasperrutte.dev/">
+                Jasper Rutte
+            </a>
         </div>
     </footer>
 </body>
-</html>
 
 
 
 
-<!--<body class="bg-zinc-900 mx-[16rem]">-->
+
 <!--<header>-->
 <!--    <section>-->
-<!--        <div class="mt-[18rem]">-->
-<!--            <h1 class="lg:text-7xl md:text-6xl pb-2 tracking-wide font-bold text-white">Jasper Rutte</h1>-->
-<!--            <h2 class="text-2xl text-gray-600">Software Developer</h2>-->
-<!--            <div class="mt-4 flex space-x-4">-->
-<!--                <a href="https://google.nl" style="cursor:default">-->
-<!--                    <i class="fa-brands fa-github fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>-->
-<!--                </a>-->
-<!--                <a href="https://google.nl" style="cursor:default">-->
-<!--                    <i class="fa-solid fa-circle-info fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>-->
-<!--                </a>-->
-<!--                <a href="https://google.nl" style="cursor:default">-->
-<!--                    <i class="fa-solid fa-code fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>-->
-<!--                </a>-->
-<!--            </div>-->
+<!--        <div class="container grid grid-cols-2 mb-[15rem]">-->
+<!--            <div class="mt-[15rem] row-start-1">-->
+<!--                <h1 class="mt-[5rem] text-8xl text-white pb-2 tracking-wide md:text-6xl">Jasper Rutte</h1>-->
+<!--                <h2 class="text-3xl text-gray-600">Software Developer</h2>-->
+    <!--                <div class="mt-4 flex space-x-4">-->
+    <!--                    <a href="https://github.com/jasperrutte" style="cursor:default">-->
+    <!--                        <i class="fa-brands fa-github fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>-->
+    <!--                    </a>-->
+    <!--                    <a href="#about" style="cursor:default">-->
+    <!--                        <i class="fa-solid fa-circle-info fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>-->
+    <!--                    </a>-->
+    <!--                    <a href="#experience" style="cursor:default">-->
+    <!--                        <i class="fa-solid fa-code fa-2xl text-white transition ease-in-out delay-150 hover:text-gray-400"></i>-->
+    <!--                    </a>-->
+    <!--                </div>-->
 
-<!--            <hr class="h-px w-[9rem] my-6 bg-gray-700 border-0">-->
-<!--            <img src="./assets/images/mockup.png" alt="Jasper Rutte Mockup" class="">-->
+<!--                <hr class="h-1 w-[9rem] my-6 bg-gray-700 border-0">-->
+<!--            </div>-->
+<!--            <div class="mt-[15rem] row-end-2">-->
+<!--                <img src="./assets/images/mockup.png" alt="Jasper Rutte Mockup" class="h-full md:h-72 mt-[0rem] md:mt-[5rem]">-->
+<!--            </div>-->
 <!--        </div>-->
 <!--    </section>-->
 <!--</header>-->
-<!--<hr class="h-1 w-[64rem] my-6 bg-gray-700 border-0 mb-8">-->
+<!--<hr class="h-1 w-[auto] bg-gray-700 border-0">-->
 <!--<main>-->
-<!--    <section>-->
-<!--        <div class="mt-[18rem]">-->
-<!--            <h1 class="text-4xl text-white font-bold pb-4">Who am I?</h1>-->
-<!--            <a class="text-gray-200">-->
+<!--    <section id="about">-->
+<!--        <div class="mt-[2rem] columns-2">-->
+<!--            <h1 class="text-4xl text-white font-bold pb-4 md:text-5xl">Who am I?</h1>-->
+<!--            <a class="text-gray-200 text-base md:text-xl">-->
 <!--                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan mattis consectetur. Aliquam non turpis est. Mauris condimentum sodales nisi commodo porttitor. Suspendisse metus dui, fermentum laoreet tellus sit amet, porta placerat ipsum. Duis condimentum, justo nec feugiat venenatis, ante ex tempus nisl, sed aliquam felis sapien scelerisque est. Aliquam vel congue diam, quis tempor arcu. Nulla feugiat bibendum mi, nec vehicula mauris cursus sit amet. Aliquam erat volutpat. Aenean sagittis massa justo, quis bibendum dui tincidunt a. Mauris convallis nec arcu non fermentum. Donec porta et leo sed accumsan. Phasellus sodales magna felis, vitae fermentum sapien vehicula vel. Etiam at justo placerat, vehicula diam condimentum, congue mauris. Sed auctor risus nisl, at vestibulum diam faucibus quis.-->
 <!--                <br><br>-->
 <!--                Sed mollis egestas ipsum, molestie accumsan sapien fermentum rutrum. Phasellus eget leo consequat, venenatis sapien id, rhoncus elit. Maecenas convallis mattis arcu. Cras mattis, libero eget aliquam faucibus, justo sem imperdiet nisi, quis fringilla lacus enim eu tortor. Donec condimentum tempor turpis, non elementum lectus ultricies quis. Pellentesque mollis a ligula at accumsan. Integer in varius magna. Mauris ut nulla convallis, iaculis ligula non, vestibulum lorem. Nunc ac leo ex. Etiam ullamcorper suscipit leo. Curabitur rhoncus hendrerit viverra. Curabitur tristique dapibus nibh at ultricies. Nullam felis sapien, tempor et commodo sit amet, lacinia id ipsum. Integer sed scelerisque urna, in tempus augue. In turpis mauris, tristique a dui non, fermentum commodo purus. Proin mi tellus, dapibus sit amet pulvinar vel, luctus sit amet nunc.-->
 <!--            </a>-->
+<!--            <img src="./assets/images/JasperPic.png" alt="Picture" class="h-[32rem] rounded-full text-base md:text-lg md:h-[26rem]">-->
 <!--        </div>-->
 <!--    </section>-->
+<!--    <hr class="h-1 w-[auto] my-10 bg-gray-700 border-0">-->
+<!--    <section id="experience">-->
+<!--        <h1 class="text-4xl text-white pb-4 font-bold tracking-wide">Programming <br> experiences</h1>-->
+<!--        <a class="text-gray-200 text-base md:text-xl">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.-->
+<!--            <br><br>-->
+<!--            Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus, euismod justo. Mauris nec leo non libero sodales lobortis. Quisque a neque pretium, dictum tellus vitae, euismod neque. Nulla facilisi. Phasellus ultricies dignissim nibh ut cursus. Nam et quam sit amet turpis finibus maximus tempor eget augue. Aenean at ultricies lorem. Sed egestas ligula tortor, sit amet mattis ex feugiat non. Duis purus diam, dictum et ante at, commodo iaculis urna. Aenean lacinia, nisl id vehicula condimentum, enim massa.</a>-->
+<!--    </section>-->
 <!--</main>-->
+
+<!--<footer class="mt-10 text-center lg:text-left">-->
+<!--    <div class="p-4 text-center text-gray-100">-->
+<!--        Â© <script>document.write(new Date().getFullYear())</script> Copyright:-->
+<!--        <a class="text-gray-200 transition ease-in-out delay-150 hover:text-blue-400" style="cursor:default" href="https://jasperrutte.dev/">-->
+<!--            Jasper Rutte-->
+<!--        </a>-->
+<!--    </div>-->
+<!--</footer>-->
 <!--</body>-->
 <!--</html>-->
